@@ -4,7 +4,10 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-//TODO: Add error handling for missing API key or API URL in .env file
+if (!process.env.API_KEY || !process.env.WEATHER_API_URL) {
+  console.error('API_KEY and WEATHER_API_URL must be set in .env');
+  process.exit(1);
+}
 
 const PORT = process.env.PORT || 8080; // default to 8080 if PORT is not set in .env
 

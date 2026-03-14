@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node --env-file=.env dist/entry.js",
+    "build": "tsc",
     "test": "echo \"tests not implemented yet\" && exit 1" 
   },
   "keywords": [],

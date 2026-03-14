@@ -2,7 +2,8 @@ import axios, { AxiosError } from 'axios';
 import type { RawResponse, ProcessedResponse, TempScale } from './weather.dto.js';
 
 export class WeatherService {
-  // TODO: add checks in entry.ts to ensure these environment variables are not missing
+  // The non-null assertion operator (!) is used here because we have already checked for the presence of 
+  // these environment variables in entry.ts.
   private readonly apiKey = process.env.API_KEY!;
   private readonly baseUrl = process.env.WEATHER_API_URL!;
 
