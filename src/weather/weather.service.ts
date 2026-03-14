@@ -1,5 +1,5 @@
 import axios, { AxiosError } from 'axios';
-import type { RawResponse, ProcessedResponse, TempScale } from './weather.dto.js';
+import type { RawResponse, ProcessedResponse, TempScale, WeatherAPIError } from './weather.dto.js';
 
 export class WeatherService {
   // The non-null assertion operator (!) is used here because we have already checked for the presence of 
@@ -28,7 +28,7 @@ async getWeatherData(zip: string, scale: TempScale): Promise<ProcessedResponse> 
     } catch (error: unknown) {
       
       if (axios.isAxiosError(error)) {
-        const axiosError = error as AxiosError<any>; //TODO: I want to avoid any type here
+        const axiosError = error as AxiosError<WeatherAPIError>;
         
         // 1006 is the specific WeatherAPI code if no location is found
         if (axiosError.response?.data?.error?.code === 1006) {

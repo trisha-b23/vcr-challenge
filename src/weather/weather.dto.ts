@@ -22,3 +22,11 @@ export interface ProcessedResponse {
 
 // Enum to define the allowed temperature scales.
 export type TempScale = 'Fahrenheit' | 'Celsius';
+
+// Structure of error response received from the WeatherAPI
+export interface WeatherAPIError {
+  error: {
+    code: number;
+    message: string;
+  };
+}
