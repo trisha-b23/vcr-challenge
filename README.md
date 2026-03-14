@@ -39,8 +39,8 @@ The WeatherAPI supports three location formats:
 | Country | Format | Example |
 |---------|--------|---------|
 | United States | 5-digit zip code | `24060` |
-| *United Kingdom | Full or partial postcode | `SW1A 1AA`, `SW1` |
-| *Canada | Postal code | `K1A 0A6` |
+| *United Kingdom | Full or partial postcode | `SW1A1AA`, `SW1` |
+| *Canada | Postal code | `K1A0A6` |
 
 *Refer to Implementation Decisions
 
