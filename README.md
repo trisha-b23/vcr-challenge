@@ -42,7 +42,7 @@ The WeatherAPI supports three location formats:
 | *United Kingdom | Full or partial postcode | `SW1A 1AA`, `SW1` |
 | *Canada | Postal code | `K1A 0A6` |
 
-*Refer to [Implementation Decisions](https://github.com/trisha-b23/weather-service-api/edit/main/README.md#uk-and-canada-support)
+*Refer to Implementation Decisions
 
 ### Example Requests
 
