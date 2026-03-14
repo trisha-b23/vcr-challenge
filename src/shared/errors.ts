@@ -10,7 +10,7 @@ export class ErrorHandler {
         'MISSING_LOCATION': { code: 400, msg: 'A location is required' },
         'INVALID_FORMAT': { code: 400, msg: 'A valid zip code is required. Please enter a US, UK, or Canada location code.' },
         'INVALID_SCALE': { code: 400, msg: 'Invalid scale. Use "Celsius" or "Fahrenheit"' },
-        'NOT_FOUND': { code: 404, msg: 'Zip code is not found. Please check the code and try again.' },
+        'NOT_FOUND': { code: 404, msg: 'Location is not found. Please check the code and try again.' },
         'API_UNAVAILABLE': { code: 503, msg: 'The Weather API is temporarily unavailable.' }
       };
 
