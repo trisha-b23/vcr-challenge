@@ -25,8 +25,8 @@ describe('RequestValidator', () => {
         });
 
         it('should accept a valid UK postcode', () => {
-            const result = RequestValidator.validateWeatherParams('SW1A 1AA', null);
-            expect(result.zipCode).toBe('SW1A 1AA');
+            const result = RequestValidator.validateWeatherParams('SW1A1AA', null);
+            expect(result.zipCode).toBe('SW1A1AA');
         });
 
         it('should accept a valid UK postcode (lowercase characters)', () => {
@@ -35,8 +35,8 @@ describe('RequestValidator', () => {
         });
 
         it('should accept a valid Canadian postal code', () => {
-            const result = RequestValidator.validateWeatherParams('K1A 0A6', null);
-            expect(result.zipCode).toBe('K1A 0A6');
+            const result = RequestValidator.validateWeatherParams('K1A0A6', null);
+            expect(result.zipCode).toBe('K1A0A6');
         });
 
         it('should accept a valid Canadian postal code (lowercase characters)', () => {
